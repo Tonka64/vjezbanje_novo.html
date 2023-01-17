@@ -7,6 +7,37 @@
   <title>Document</title>
 
 <style>
+
+a {
+  color: red;
+  text-decoration: none;
+}
+.cel {
+  background-color: yellow;
+}
+
+a:visited {
+  color: magenta;
+}
+
+.cel:hover {
+  background: lightgreen;
+  cursor: pointer;
+}
+
+a:active {
+  color: blue;
+}
+
+.cel2 {
+  background-color: yellow;
+}
+.cel2:hover {
+  background-color: red;
+}
+
+<!--novo-->
+
  a:link {
    color: lightsalmon;
    background-color: lawngreen;
@@ -67,12 +98,37 @@ a.vrsta2:active {
   color: white;
 }
 
+<!--malo vjezbanja tablica-->
 
+table {
+  border: 2px solid blue;
+  margin-right: auto;
+  margin-left: auto;
+  border-spacing: 0px;
+  border-collapse: collapse;
+
+}
+
+td {
+ 
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px 10px;
+  border: 1px solid blue;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 </style>
 
 
 </head>
 <body>
+
+<h2>link</h2>
+<a href="./logo/logo.html">Logo google</a>
    <ul>
      <li><a href="https://www.algebra.hr/">Algebra</a></li>
      <br>
@@ -88,5 +144,32 @@ a.vrsta2:active {
   <br>
   <li><a class="vrsta2" href="https://www.google.com/">Google</a></li>
 </ul>
+<br>
+<hr>
+<br>
+<h2>Tablica</h2>
+<table>
+  <tr>
+    <td rowspan="4" class="cel"><a href="https://www.algebra.hr">A</a></td>
+    <td>B</td>
+    <td colspan="2" class="cel2">C</td>
+  </tr>
+  <tr>
+    <td colspan="3">D</td>
+    
+  </tr>
+  <tr>
+    <td colspan="2">E</td>
+    <td rowspan="2">F</td>
+  </tr>
+  <tr>
+    <td class="cel"><a href="https://www.google.com" target="_blank">G</a></td>
+    <td>H</td>
+  </tr>
+
+</table>
+
+
+
 </body>
 </html>
